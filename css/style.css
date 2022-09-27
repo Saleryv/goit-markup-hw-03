@@ -72,11 +72,15 @@ button {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+button {
+  border-radius: 10px;
+}
 /* =========================== HEADER ========================== */
 
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .page-nav {
   display: flex;
