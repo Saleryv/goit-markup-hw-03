@@ -74,6 +74,7 @@ button {
 }
 button {
   border-radius: 10px;
+  border: transparent solid;
 }
 /* =========================== HEADER ========================== */
 
@@ -369,6 +370,9 @@ button {
   column-gap: 30px;
   row-gap: 30px;
 }
+.portfolio-item {
+  border-bottom: #eeeeee solid;
+}
 
 .portfolio-item-title {
   font-family: "Roboto";
@@ -378,6 +382,9 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primaru-text-color);
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-left: 24px;
 }
 
 .portfolio-item-description {
@@ -388,6 +395,8 @@ button {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--additional-text-color);
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 /* ============ FOOTER ================= */
 .footer {
