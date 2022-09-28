@@ -5,14 +5,18 @@
 }
 
 :root {
-  --primaru-text-color: #212121;
+  --primary-text-color: #212121;
   --logo-color: #000000;
   --accent-color: #2196f3;
   --additional-text-color: #757575;
   --address-text-color: rgba(255, 255, 255, 0.6);
   --accent-text-color: #ffffff;
   --background-btn-color: #f5f4fa;
-  --primaru-font-style: "Roboto", sans-serif;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --extra-border-color: #ececec;
+  --main-background-color: #2f303a;
+  --btn-bg-color: #188ce8;
 }
 
 .visually-hidden {
@@ -58,7 +62,7 @@ button {
 
 .body {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
   color: var(--primaru-text-color);
   text-decoration: none;
 }
@@ -79,7 +83,7 @@ button {
 /* =========================== HEADER ========================== */
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--extra-border-color);
 }
 .header-container {
   display: flex;
@@ -110,7 +114,7 @@ button {
   top: 24px;
   padding-bottom: 25px;
 
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -125,7 +129,7 @@ button {
   left: 215px;
   top: 24px;
 
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -138,7 +142,7 @@ button {
 
 .link {
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -148,7 +152,7 @@ button {
 }
 .link:hover,
 .link:focus {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -163,7 +167,7 @@ button {
 }
 
 .contact-mail {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -173,7 +177,7 @@ button {
   text-decoration: none;
 }
 .contact-tel {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -200,18 +204,18 @@ button {
 }
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--main-background-color);
 }
 /* ======== ?????????=========== */
 .hero-title {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--accent-text-color);
 
   display: flex;
   text-align: center;
@@ -222,7 +226,7 @@ button {
   margin-right: auto;
 }
 .hero-btn {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
@@ -246,7 +250,7 @@ button {
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--accent-text-color);
-  background-color: #188ce8;
+  background-color: var(--btn-bg-color);
 }
 
 /* ================================ features ========================= */
@@ -261,7 +265,7 @@ button {
 .features-title {
   margin: 0 auto;
   margin-bottom: 30px;
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -283,7 +287,7 @@ button {
   flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .features-item-title {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -294,7 +298,7 @@ button {
   padding-bottom: 10px;
 }
 .features-item-text {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -313,7 +317,7 @@ button {
 }
 
 .what-title {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -333,11 +337,11 @@ button {
 
 .team {
   margin-bottom: 0;
-  background-color: #f5f4fa;
+  background-color: var(--background-btn-color);
 }
 
 .team-title {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -365,7 +369,7 @@ button {
 }
 
 .team-item-title {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -376,7 +380,7 @@ button {
   margin-bottom: 10px;
 }
 .team-title-description {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -394,7 +398,7 @@ button {
   margin-bottom: 50px;
 }
 .menu-btn {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -404,7 +408,7 @@ button {
   padding: 6px 26px;
 
   color: var(--primaru-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--background-btn-color);
 }
 .menu-btn:hover,
 .menu-btn:focus {
@@ -425,7 +429,7 @@ button {
 }
 
 .portfolio-item-title {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -438,7 +442,7 @@ button {
 }
 
 .portfolio-item-description {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -450,7 +454,7 @@ button {
 }
 /* ============ FOOTER ================= */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--main-background-color);
 }
 .footer-container {
   padding-top: 60px;
@@ -461,7 +465,7 @@ button {
   height: 31px;
   left: 215px;
   margin-top: 60px;
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -472,7 +476,7 @@ button {
 
 .footer-link,
 .footer-address {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
