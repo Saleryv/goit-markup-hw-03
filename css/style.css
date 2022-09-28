@@ -52,6 +52,8 @@ img {
 
 button {
   cursor: pointer;
+  border-radius: 4px;
+  border: transparent solid;
 }
 
 .body {
@@ -60,6 +62,7 @@ button {
   color: var(--primaru-text-color);
   text-decoration: none;
 }
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -69,19 +72,18 @@ button {
 }
 
 .section {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
-button {
-  border-radius: 10px;
-  border: transparent solid;
-}
+
 /* =========================== HEADER ========================== */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .page-nav {
   display: flex;
@@ -133,6 +135,7 @@ button {
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
   font-family: "Roboto";
@@ -153,6 +156,12 @@ button {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+
+.portfolio-link,
+.studio-link {
+  color: var(--accent-color);
+}
+
 .contact-mail {
   font-family: "Roboto";
   font-style: normal;
@@ -161,6 +170,7 @@ button {
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
+  text-decoration: none;
 }
 .contact-tel {
   font-family: "Roboto";
@@ -170,6 +180,7 @@ button {
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
+  text-decoration: none;
 }
 
 .contact-mail:hover,
@@ -180,26 +191,35 @@ button {
 .contact-tel:focus {
   color: var(--accent-color);
 }
+/* ===============/ HEADER /==================== */
 /* =========================== HERO ======================= */
 .hero-container {
+  display: block;
   align-items: center;
+  padding-bottom: 200px;
 }
 
 .hero {
   background-color: #2f303a;
 }
+/* ======== ?????????=========== */
 .hero-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+
+  display: flex;
+  text-align: center;
   padding-top: 200px;
   margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn {
   font-family: "Roboto";
@@ -207,23 +227,33 @@ button {
   font-style: normal;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--accent-text-color);
   background-color: var(--accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  align-items: center;
+  text-align: center;
   display: block;
   margin: 0 auto;
-  margin-bottom: 200px;
+  padding: 10px 32px;
+  /* ==== ЯК ЗРОБИТИ ПАДДІНГ ======== */
+  /* width: 216px;
+  height: 50px; */
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--accent-color);
-  background-color: var(--accent-text-color);
+  color: var(--accent-text-color);
+  background-color: #188ce8;
 }
 
 /* ================================ features ========================= */
+.features {
+  margin-bottom: 0;
+  padding-bottom: 47px;
+}
 .features-container {
   display: block;
 }
@@ -257,10 +287,11 @@ button {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primaru-text-color);
+  padding-bottom: 10px;
 }
 .features-item-text {
   font-family: "Roboto";
@@ -272,6 +303,11 @@ button {
   color: var(--additional-text-color);
 }
 /* ======================================= what-we-do ================================ */
+.what-we-do {
+  margin-top: 0;
+  padding-top: 47px;
+}
+
 .what-container {
   display: block;
 }
@@ -294,6 +330,12 @@ button {
   column-gap: 30px;
 }
 /* =========================== OUR TEAM ====================== */
+
+.team {
+  margin-bottom: 0;
+  background-color: #f5f4fa;
+}
+
 .team-title {
   font-family: "Roboto";
   font-style: normal;
@@ -304,6 +346,7 @@ button {
   letter-spacing: 0.03em;
   color: var(--primaru-text-color);
   margin-bottom: 50px;
+  padding-top: 94px;
 }
 
 .team-list {
@@ -311,8 +354,12 @@ button {
   flex-wrap: wrap;
   column-gap: 30px;
   list-style: none;
+  padding-bottom: 90px;
 }
-
+.team-card {
+  padding-bottom: 30px;
+  background-color: var(--accent-text-color);
+}
 .team-photo {
   margin-bottom: 50px;
 }
@@ -344,6 +391,7 @@ button {
   list-style: none;
   column-gap: 8px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .menu-btn {
   font-family: "Roboto";
@@ -354,7 +402,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   padding: 6px 26px;
-  margin-bottom: 50px;
+
   color: var(--primaru-text-color);
   background-color: #f5f4fa;
 }
@@ -363,15 +411,17 @@ button {
   color: var(--accent-text-color);
   background-color: var(--accent-color);
 }
+.portfolio-text {
+  border: #eeeeee 1px solid;
+  border-top: none;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   column-gap: 30px;
   row-gap: 30px;
-}
-.portfolio-item {
-  border-bottom: #eeeeee solid;
 }
 
 .portfolio-item-title {
